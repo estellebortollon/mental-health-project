@@ -8,35 +8,33 @@ sources:
            identifier: mental_illnesses_prevalence #What is the exact name of the table in  BQ
            description: Most prevalent mental illnesses per country from 1990 to 2019
            columns:
-             - name: Entity
+             - name: entity
                description: country
                tests:
                  - not_null
-             - name: Code
+             - name: code
                description: country code
-               tests:
-                - not_null
-             - name: Year
+             - name: year
                description: year
                tests:
                 - not_null
-             - name: Schizophrenia_disorders
+             - name: schizophrenia_disorders
                description: schizophrenia
                tests:
                 - not_null
-             - name: Depressive_disorders
+             - name: depressive_disorders
                description: depression
                tests:
                 - not_null
-             - name: Anxiety_disorders
+             - name: anxiety_disorders
                description: anxiety
                tests:
                 - not_null
-             - name: Bipolar_disorders
+             - name: bipolar_disorders
                description: bipolarity
                tests:
                 - not_null
-             - name: Eating_disorders
+             - name: eating_disorders
                description: eating disorders
                tests:
                 - not_null
@@ -44,35 +42,33 @@ sources:
            identifier: burden_disease_from_each_mental_illness
            description: DALY = Disability-Adjusted Life Year
            columns:
-             - name: Entity
+             - name: entity
                description: country
                tests:
                  - not_null
-             - name: Code
+             - name: code
                description: country code
-               tests:
-                 - not_null
-             - name: Year
+             - name: year
                description: year
                tests:
                  - not_null
-             - name: DALYs_depressive_disorders
+             - name: dalys_depressive_disorders
                description: Disability-Adjusted Life Year for depressive disorders (nb d'années de vie en bonne santé perdues, années de vie perdues à cause d'un décès prématuré ou années vécues avec une maladie ou un handicap)
                tests:
                  - not_null                 
-             - name: DALYs_schizophrenia
+             - name: dalys_schizophrenia
                description: Disability-Adjusted Life Year for schizophrenia (nb d'années de vie en bonne santé perdues, années de vie perdues à cause d'un décès prématuré ou années vécues avec une maladie ou un handicap)
                tests:
                  - not_null   
-             - name: DALYs_bipolar_disorder
+             - name: dalys_bipolar_disorder
                description: Disability-Adjusted Life Year for bipolar disorder (nb d'années de vie en bonne santé perdues, années de vie perdues à cause d'un décès prématuré ou années vécues avec une maladie ou un handicap)
                tests:
                  - not_null   
-             - name: DALYs_eating_disorders
+             - name: dalys_eating_disorders
                description: Disability-Adjusted Life Year for eating disorders (nb d'années de vie en bonne santé perdues, années de vie perdues à cause d'un décès prématuré ou années vécues avec une maladie ou un handicap)
                tests:
                  - not_null
-             - name: DALYs_anxiety_disorders
+             - name: dalys_anxiety_disorders
                description: Disability-Adjusted Life Year for anxiety disorders (nb d'années de vie en bonne santé perdues, années de vie perdues à cause d'un décès prématuré ou années vécues avec une maladie ou un handicap)
                tests:
                  - not_null
@@ -80,19 +76,17 @@ sources:
            identifier: adult_population_covered_in_primary_data_on_the_prevalence_of_major_depression
            description: taux de couverture des données de dépression majeure sur la population adulte dans différentes régions du monde en 2008
            columns:
-             - name: Entity
+             - name: entity
                description: region
                tests:
                  - not_null
-             - name: Code
+             - name: code
                description: region code
-               tests:
-                 - not_null
-             - name: Year
+             - name: year
                description: year
                tests:
                  - not_null
-             - name: Major_depression
+             - name: major_depression
                description: taux de couverture de données
                tests:
                  - not_null
@@ -100,39 +94,37 @@ sources:
            identifier: adult_population_covered_in_primary_data_on_the_prevalence_of_mental_illnesses
            description: taux de couverture des données de pathologies mentales sur la population adulte dans différentes régions du monde en 2008 
            columns:
-             - name: Entity
+             - name: entity
                description: region
                tests:
                  - not_null
-             - name: Code
+             - name: code
                description: region code
-               tests:
-                 - not_null
-             - name: Year
+             - name: year
                description: year
                tests:
                  - not_null
-             - name: Major_depression
+             - name: major_depression
                description: major depression
                tests:
                  - not_null
-             - name: Bipolar_disorder
+             - name: bipolar_disorder
                description: bipolar disorder
                tests:
                  - not_null
-             - name: Eating_disorders
+             - name: eating_disorders
                description: major depression
                tests:
                  - not_null
-             - name: Dysthymia
+             - name: dysthymia
                description: dysthymia
                tests:
                  - not_null
-             - name: Schizophrenia
+             - name: schizophrenia
                description: schizophrenia
                tests:
                  - not_null
-             - name: Anxiety_disorders
+             - name: anxiety_disorders
                description: anxiety disorders
                tests:
                  - not_null                               
@@ -140,27 +132,25 @@ sources:
            identifier: anxiety_disorders_treatment_gap
            description: taux de couverture des données de pathologies mentales sur la population adulte dans différentes régions du monde en 2008 
            columns:
-             - name: Entity
+             - name: entity
                description: country
                tests:
                  - not_null
-             - name: Code
+             - name: code
                description: country code
-               tests:
-                 - not_null
-             - name: Year
+             - name: year
                description: year
                tests:
                  - not_null
-             - name: Potentially_adequate_treatment_conditional
+             - name: potentially_adequate_treatment_conditional
                description: percentage of potentially adequate treatments
                tests:
                  - not_null
-             - name: Other treatments_conditional
+             - name: other_treatments_conditional
                description: percentage of other treatments
                tests:
                  - not_null
-             - name: Untreated_conditional
+             - name: untreated_conditional
                description: percentage of untreated population
                tests:
                  - not_null
@@ -168,19 +158,17 @@ sources:
            identifier: depressive_symptoms_across_us_population
            description: récurrence de chaque symptôme de dépression aux Etats-Unis en 2014 
            columns:
-             - name: Entity
+             - name: entity
                description: symptom name
                tests:
                  - not_null
-             - name: Code
+             - name: code
                description: country code
-               tests:
-                 - not_null
-             - name: Year
+             - name: year
                description: year
                tests:
                  - not_null
-             - name: Nearly_every_day
+             - name: nearly_every_day
                description: year
                tests:
                  - not_null
@@ -188,19 +176,17 @@ sources:
            identifier: number_of_countries_with_primary_data_on_prevalence_of_mental_illnesses_in_the_global_burden_of_disease_study
            description: nombre de pays ayant de la donnée sur les troubles mentaux en 2019
            columns:
-             - name: Entity
+             - name: entity
                description: mental disorder
                tests:
                  - not_null
-             - name: Code
+             - name: code
                description: country code
-               tests:
-                 - not_null
-             - name: Year
+             - name: year
                description: year
                tests:
                  - not_null
-             - name: Number_of_countries_with_primary_data_on_prevalence_of_mental_disorders
+             - name: number_of_countries_with_primary_data_on_prevalence_of_mental_disorders
                description: nb de pays
                tests:
                  - not_null

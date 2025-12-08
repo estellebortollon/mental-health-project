@@ -12,7 +12,7 @@ sources:
                description: country
                tests:
                  - not_null
-             - name: Code
+             - name: code
                description: country code
                tests:
                 - not_null
@@ -48,7 +48,7 @@ sources:
                description: country
                tests:
                  - not_null
-             - name: Code
+             - name: code
                description: country code
                tests:
                  - not_null
@@ -104,7 +104,7 @@ sources:
                description: region
                tests:
                  - not_null
-             - name: Code
+             - name: code
                description: region code
                tests:
                  - not_null
@@ -144,7 +144,7 @@ sources:
                description: country
                tests:
                  - not_null
-             - name: Code
+             - name: code
                description: country code
                tests:
                  - not_null

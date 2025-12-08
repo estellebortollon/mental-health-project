@@ -172,7 +172,7 @@ sources:
                description: symptom name
                tests:
                  - not_null
-             - name: Code
+             - name: code
                description: country code
                tests:
                  - not_null
@@ -192,7 +192,7 @@ sources:
                description: mental disorder
                tests:
                  - not_null
-             - name: Code
+             - name: code
                description: country code
                tests:
                  - not_null

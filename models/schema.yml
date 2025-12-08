@@ -12,7 +12,7 @@ sources:
                description: country
                tests:
                  - not_null
-             - name: code
+             - name: Code
                description: country code
                tests:
                 - not_null

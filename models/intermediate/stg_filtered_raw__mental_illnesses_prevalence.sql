@@ -1,8 +1,7 @@
-with 
+with source as (
 
-source as (
-
-    select * from {{ source('raw', 'mental_illnesses_prevalence') }}
+    select *
+    from {{ ref('int_mental_illnesses_prevalence') }}
 
 ),
 
@@ -11,6 +10,7 @@ renamed as (
     select
         entity,
         code,
+        continent,
         year,
         schizophrenia_disorders,
         depressive_disorders,
@@ -19,8 +19,7 @@ renamed as (
         eating_disorders
 
     from source
-    where code is not null
-
+where code is not null
 )
 
 select * from renamed

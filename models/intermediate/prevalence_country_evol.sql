@@ -3,7 +3,7 @@
 with source as (
 
     select *
-    from {{ ref('stg_raw__mental_illnesses_prevalence') }}
+    from {{ ref('int_mental_illnesses_prevalence') }}
 
 ),
 
@@ -12,6 +12,7 @@ base as (
     select
         entity,
         code,
+        continent,
         year,
         schizophrenia_disorders,
         depressive_disorders,
@@ -35,6 +36,7 @@ final as (
     select
         entity,
         code,
+        continent,
         year,
 
         round(schizophrenia_disorders, 4) as schizophrenia_disorders,

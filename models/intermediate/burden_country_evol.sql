@@ -3,7 +3,7 @@
 with source as (
 
     select *
-    from {{ ref('stg_raw__burden_disease') }}
+    from {{ ref('int_burden_disease') }}
 
 ),
 
@@ -12,6 +12,7 @@ base as (
     select
         entity,
         code,
+        continent,
         year,
         dalys_depressive_disorders,
         dalys_schizophrenia,
@@ -35,6 +36,7 @@ final as (
     select
         entity,
         code,
+        continent,
         year,
 
         round(dalys_depressive_disorders, 4) as dalys_depressive_disorders,

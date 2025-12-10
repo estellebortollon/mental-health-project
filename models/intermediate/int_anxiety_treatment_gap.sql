@@ -5,7 +5,9 @@ with source as (
     select *
     from {{ ref('stg_raw__anxiety_treatment_gap') }}
 
-)
+),
+
+table_continent AS (
 
 select
     *,
@@ -40,3 +42,14 @@ select
     end as continent
 
 from source
+)
+
+SELECT
+    continent,
+    entity,
+    code,
+    potentially_adequate_treatment_conditional,
+    other_treatments_conditional,
+    untreated_conditional,
+FROM table_continent
+WHERE code IS NOT NULL

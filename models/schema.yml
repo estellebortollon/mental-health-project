@@ -232,3 +232,15 @@ sources:
                description: taux de réhospitalisation à 30 jours pour troubles moyens sévères en 2015
              - name: tx_rehosp_30j_tms_2019
                description: taux de réhospitalisation à 30 jours pour troubles moyens sévères en 2019
+         - name: departements_francais
+           identifier: departements_francais #What is the exact name of the table in  BQ
+           description: Liste des départements français (codes ISO et noms) et régions
+           columns:
+             - name: code_departement
+               description: code ISO départements français
+             - name: nom_departement
+               description: noms départements français
+             - name: code_region
+               description: code ISO régions françaises
+             - name: nom_region
+               description: noms régions françaises

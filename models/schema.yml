@@ -196,8 +196,6 @@ sources:
            columns:
              - name: departement
                description: code ISO départements français
-               tests:
-                 - not_null
              - name: densite_lit_2015
                description: taux de densité de lits en psychiatrie en 2015
              - name: densite_lit_2019

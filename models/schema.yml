@@ -190,3 +190,47 @@ sources:
                description: nb de pays
                tests:
                  - not_null
+         - name: france_hospitalisation
+           identifier: france_hospitalisation #What is the exact name of the table in  BQ
+           description: Données sur l'hospitalisation pour cause de santé mentale dans les départements français 
+           columns:
+             - name: departement
+               description: code ISO départements français
+               tests:
+                 - not_null
+             - name: densite_lit_2015
+               description: taux de densité de lits en psychiatrie en 2015
+             - name: densite_lit_2019
+               description: taux de densité de lits en psychiatrie en 2019
+             - name: densite_centre_2015
+               description: taux de densité de centres psychothérapiques en 2015   
+             - name: densite_centre_2019
+               description: taux de densité de centres psychothérapiques en 2019
+             - name: tx_hosp_tmf_2015
+               description: taux d'hospitalisation pour troubles moyens fréquents en 2015
+             - name: tx_hosp_tmf_2019
+               description: taux d'hospitalisation pour troubles moyens fréquents en 2019
+             - name: tx_hosp_tms_2015
+               description: taux d'hospitalisation pour troubles moyens sévères en 2015
+             - name: tx_hosp_tms_2019
+               description: taux d'hospitalisation pour troubles moyens sévères en 2019
+             - name: tx_recours_etablissement_ts_2015
+               description: taux de recours à un établissement en cas de tentative de suicide en 2015
+             - name: tx_recours_etablissement_ts_2019
+               description: taux de recours à un établissement en cas de tentative de suicide en 2019
+             - name: duree_moy_hosp_tmf_2015
+               description: durée moyenne d'hospitalisation pour troubles moyens fréquents en 2015
+             - name: duree_moy_hosp_tmf_2019
+               description: durée moyenne d'hospitalisation pour troubles moyens fréquents en 2019
+             - name: duree_moy_hosp_tms_2015
+               description: durée moyenne d'hospitalisation pour troubles moyens sévères en 2015
+             - name: duree_moy_hosp_tms_2019
+               description: durée moyenne d'hospitalisation pour troubles moyens sévères en 2019
+             - name: tx_rehosp_30j_tmf_2015
+               description: taux de réhospitalisation à 30 jours pour troubles moyens fréquents en 2015
+             - name: tx_rehosp_30j_tmf_2019
+               description: taux de réhospitalisation à 30 jours pour troubles moyens fréquents en 2019
+             - name: tx_rehosp_30j_tms_2015
+               description: taux de réhospitalisation à 30 jours pour troubles moyens sévères en 2015
+             - name: tx_rehosp_30j_tms_2019
+               description: taux de réhospitalisation à 30 jours pour troubles moyens sévères en 2019
